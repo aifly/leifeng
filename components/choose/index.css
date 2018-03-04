@@ -1,0 +1,168 @@
+/*.ant-btn:focus, .ant-btn:hover,.ant-input:focus, .ant-input:hover {
+    background-color: #fff;
+    border-color: #bf1616;
+    box-shadow: 0 0 0 2px rgba(191, 22, 22, 0.1);
+}*/
+.lt-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.zmiti-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis; }
+
+.zmiti-play {
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  right: .5rem;
+  top: .5rem; }
+  .zmiti-play.rotate {
+    -webkit-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite; }
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+.zmiti-choose-main-ui {
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity; }
+  .zmiti-choose-main-ui.show {
+    z-index: 103;
+    opacity: 1; }
+  .zmiti-choose-main-ui .zmiti-text {
+    width: 9rem;
+    margin: .5rem auto; }
+  .zmiti-choose-main-ui .zmiti-choose-list {
+    width: 9rem;
+    color: #fff;
+    font-size: .4rem;
+    margin: 0 auto;
+    position: relative; }
+    .zmiti-choose-main-ui .zmiti-choose-list li {
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      float: left;
+      background: #9ecf73;
+      text-align: center;
+      height: 5vh;
+      line-height: 5vh;
+      width: 2.5rem;
+      border-radius: 4px;
+      border: 1px solid #ffff00;
+      box-sizing: border-box;
+      position: relative;
+      margin: .2rem 0; }
+      .zmiti-choose-main-ui .zmiti-choose-list li.zmiti-word-animate-enter-active, .zmiti-choose-main-ui .zmiti-choose-list li.zmiti-word-animate-leave-active {
+        -webkit-transition: 0.4s opacity;
+        transition: 0.4s opacity; }
+      .zmiti-choose-main-ui .zmiti-choose-list li.zmiti-word-animate-enter {
+        opacity: 0; }
+      .zmiti-choose-main-ui .zmiti-choose-list li.zmiti-word-animate-leave-to {
+        opacity: 0; }
+      .zmiti-choose-main-ui .zmiti-choose-list li span {
+        -webkit-transform: scale(0.8);
+        transform: scale(0.8);
+        position: absolute;
+        width: 0.6rem;
+        height: 0.6rem;
+        background: #f75d27;
+        right: -0.3rem;
+        top: -0.3rem;
+        border-radius: 50%; }
+        .zmiti-choose-main-ui .zmiti-choose-list li span:before, .zmiti-choose-main-ui .zmiti-choose-list li span:after {
+          content: '';
+          position: absolute;
+          width: 2px;
+          height: 0.4rem;
+          top: .1rem;
+          margin-left: -.03rem;
+          background: #fff;
+          -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
+        .zmiti-choose-main-ui .zmiti-choose-list li span:after {
+          -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+      .zmiti-choose-main-ui .zmiti-choose-list li:nth-of-type(3n-1) {
+        margin: .2rem .75rem; }
+      .zmiti-choose-main-ui .zmiti-choose-list li:after {
+        content: '';
+        clear: both; }
+  .zmiti-choose-main-ui .zmiti-all-words {
+    width: 9rem;
+    margin: 0 auto;
+    position: relative; }
+    .zmiti-choose-main-ui .zmiti-all-words li {
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
+      overflow: hidden;
+      height: 5vh;
+      text-align: center;
+      line-height: 5vh;
+      width: 2.5rem;
+      float: left;
+      border-radius: 4px;
+      border: 1px solid #1a8cdc;
+      font-weight: bold;
+      box-sizing: border-box;
+      background: #fff;
+      color: #1a8cdc;
+      font-size: .4rem;
+      margin: .2rem 0;
+      position: absolute;
+      left: 0;
+      top: 0; }
+      .zmiti-choose-main-ui .zmiti-all-words li.zmiti-word-animate-enter-active, .zmiti-choose-main-ui .zmiti-all-words li.zmiti-word-animate-leave-active {
+        -webkit-transition: 0.4s;
+        transition: 0.4s; }
+      .zmiti-choose-main-ui .zmiti-all-words li.zmiti-word-animate-enter {
+        opacity: 0; }
+      .zmiti-choose-main-ui .zmiti-all-words li.zmiti-word-animate-leave-to {
+        opacity: 0; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(3n-1) {
+        left: 3.25rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(3n+1) {
+        left: 0; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(3n) {
+        left: 6.5rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(4), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(5), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(6) {
+        top: 1.2rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(7), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(8), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(9) {
+        top: 2.4rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(10), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(11), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(12) {
+        top: 3.6rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(13), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(14), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(15) {
+        top: 4.8rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(16), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(17), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(18) {
+        top: 6rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(19), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(20), .zmiti-choose-main-ui .zmiti-all-words li:nth-of-type(21) {
+        top: 7.2rem; }
+      .zmiti-choose-main-ui .zmiti-all-words li:after {
+        content: '';
+        clear: both; }
+  .zmiti-choose-main-ui .zmiti-line {
+    clear: both;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(225, 225, 2, 0.2)), color-stop(0.5, #e1e102), to(rgba(225, 225, 2, 0.2)));
+    background: -moz-linear-gradient(left, rgba(225, 225, 2, 0.2), #e1e102 50%, rgba(225, 225, 2, 0.2));
+    background: -ms-linear-gradient(left, rgba(225, 225, 2, 0.2), #e1e102 50%, rgba(225, 225, 2, 0.2));
+    width: 9rem;
+    margin: 1.6rem auto .6rem;
+    height: 1px; }
+  .zmiti-choose-main-ui .zmiti-choose-btn {
+    width: 4rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem; }
+
+/*# sourceMappingURL=index.css.map */

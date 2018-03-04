@@ -1,0 +1,72 @@
+@import "../css/base.scss";
+
+.zmiti-list-main-ui {
+	z-index: -1;
+	opacity: 0;
+	@include transition(1s opacity);
+	display: none;
+	opacity: 0;
+
+	&.show {
+		display: block;
+		z-index: 110;
+		opacity: 1;
+	}
+
+	.zmiti-vote {
+		width: 9rem;
+		margin: .5rem auto;
+	}
+
+	.zmiti-words-list {
+		width: 10rem;
+		height: 9rem;
+		margin: 0 auto;
+		@include pos(r);
+		box-sizing: border-box;
+	}
+
+	.zmiti-hotword {
+		width: 2rem;
+		@include pos(a);
+		left: 50%;
+		top: 50%;
+		@include transform(translate3d(-50%, -50%, 0));
+	}
+
+	.zmiti-word-item {
+		@include br();
+		text-align: center;
+		@include pos(a);
+		color: #fff;
+		@include displayBox(horizontal);
+		font-size: .5rem;
+
+		&:before {
+			content: '';
+			@include pos(a);
+			width: 100%;
+			height: 100%;
+			left: 0;
+			top: 0;
+			@include br();
+			box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+		}
+
+	}
+
+	.zmiti-back {
+		width: 3rem;
+		height: 1rem;
+		line-height: 1rem;
+		background: #1a8cdc;
+		color: #fff;
+		text-align: center;
+		@include br(4px);
+		font-size: .45rem;
+		@include pos(a);
+		bottom: 1.2rem;
+		left: 3.5rem;
+	}
+
+}

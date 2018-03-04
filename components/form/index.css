@@ -1,0 +1,107 @@
+/*.ant-btn:focus, .ant-btn:hover,.ant-input:focus, .ant-input:hover {
+    background-color: #fff;
+    border-color: #bf1616;
+    box-shadow: 0 0 0 2px rgba(191, 22, 22, 0.1);
+}*/
+.lt-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.zmiti-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis; }
+
+.zmiti-play {
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  right: .5rem;
+  top: .5rem; }
+  .zmiti-play.rotate {
+    -webkit-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite; }
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+.zmiti-form-main-ui {
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity; }
+  .zmiti-form-main-ui.show {
+    z-index: 104;
+    opacity: 1; }
+  .zmiti-form-main-ui .zmiti-info {
+    width: 6rem;
+    margin: .6rem 2rem 0 2rem; }
+  .zmiti-form-main-ui h2 {
+    font-size: .3rem;
+    color: #f00;
+    font-weight: normal;
+    width: 8rem;
+    margin: 0 auto;
+    text-align: right; }
+  .zmiti-form-main-ui .zmiti-form {
+    width: 8rem;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    margin: .2rem auto;
+    padding: .5rem;
+    box-sizing: border-box; }
+    .zmiti-form-main-ui .zmiti-form h3 {
+      font-weight: normal;
+      font-size: .38rem;
+      margin: .2rem 0; }
+    .zmiti-form-main-ui .zmiti-form h4 {
+      height: .2rem; }
+    .zmiti-form-main-ui .zmiti-form .zmiti-input {
+      width: 100%;
+      height: 1.1rem;
+      background: #fff;
+      border-radius: 5px;
+      position: relative; }
+      .zmiti-form-main-ui .zmiti-form .zmiti-input select {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0; }
+      .zmiti-form-main-ui .zmiti-form .zmiti-input span {
+        color: #000;
+        position: absolute;
+        font-size: .5rem;
+        left: .5rem;
+        top: .16rem; }
+      .zmiti-form-main-ui .zmiti-form .zmiti-input:after {
+        content: '';
+        position: absolute;
+        width: .5rem;
+        height: .5rem;
+        border: 2px solid #ccc;
+        top: .25rem;
+        right: .3rem;
+        -webkit-transform: rotate(45deg) scale(0.6);
+        transform: rotate(45deg) scale(0.6);
+        border-left: none;
+        border-bottom: none; }
+    .zmiti-form-main-ui .zmiti-form .zmiti-form-submit {
+      width: 100%;
+      height: 1.2rem;
+      line-height: 1.2rem;
+      background: #1a8cdc;
+      text-align: center;
+      margin-top: .7rem;
+      border-radius: 5px;
+      font-size: .5rem; }
+
+/*# sourceMappingURL=index.css.map */

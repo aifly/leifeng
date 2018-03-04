@@ -1,0 +1,205 @@
+@import "../css/base.scss";
+
+.zmiti-choose-main-ui {
+	z-index: -1;
+	opacity: 0;
+	@include transition(1s opacity);
+
+	&.show {
+		z-index: 103;
+		opacity: 1;
+	}
+
+	.zmiti-text {
+		width: 9rem;
+		margin: .5rem auto;
+	}
+
+	.zmiti-choose-list {
+		width: 9rem;
+		color: #fff;
+		font-size: .4rem;
+		margin: 0 auto;
+		@include pos(r);
+
+		li {
+			//opacity: 0;
+			//@include pos(a);
+			@include transition(.4s);
+			float: left;
+			background: #9ecf73;
+			text-align: center;
+			$height: 5vh;
+			height: $height;
+			line-height: $height;
+			width: 2.5rem;
+			@include br(4px);
+			border: 1px solid #ffff00;
+			box-sizing: border-box;
+			@include pos(r);
+
+			&.zmiti-word-animate-enter-active, &.zmiti-word-animate-leave-active {
+				@include transition(.4s opacity);
+			}
+
+			&.zmiti-word-animate-enter {
+				opacity: 0;
+			}
+
+			&.zmiti-word-animate-leave-to {
+				opacity: 0;
+				//transform: translateY(-.1rem);
+			}
+
+			span {
+				@include transform(scale(.8));
+				@include pos(a);
+				$size: .6rem;
+				width: $size;
+				height: $size;
+				background: #f75d27;
+				right: -$size/2;
+				top: -$size/2;
+				@include br();
+
+				&:before, &:after {
+					content: '';
+					@include pos(a);
+					width: 2px;
+					height: $size - .2;
+					top: .1rem;
+					margin-left: -.03rem;
+					background: #fff;
+					@include transform(rotate(45deg));
+				}
+
+				&:after {
+					@include transform(rotate(-45deg));
+				}
+
+			}
+
+			margin: .2rem 0;
+
+			&:nth-of-type(3n-1) {
+				margin: .2rem .75rem;
+			}
+
+			&:after {
+				content: '';
+				clear: both;
+			}
+
+		}
+
+	}
+
+	.zmiti-all-words {
+		width: 9rem;
+		margin: 0 auto;
+		@include pos(r);
+
+		li {
+			$height: 5vh;
+			@include transition(.4s);
+			overflow: hidden;
+			height: $height;
+			text-align: center;
+			line-height: $height;
+			width: 2.5rem;
+			float: left;
+			@include br(4px);
+			$color: #1a8cdc;
+			border: 1px solid $color;
+			font-weight: bold;
+			box-sizing: border-box;
+			//@include pos(r);
+			background: #fff;
+			color: $color;
+			font-size: .4rem;
+			margin: .2rem 0;
+			@include pos(a);
+			left: 0;
+			top: 0;
+
+			&.zmiti-word-animate-enter-active, &.zmiti-word-animate-leave-active {
+				@include transition(.4s);
+			}
+
+			&.zmiti-word-animate-enter {
+				opacity: 0;
+			}
+
+			&.zmiti-word-animate-leave-to {
+				opacity: 0;
+				//transform: translateY(-4rem);
+			}
+
+			&:nth-of-type(3n-1) {
+				left: 3.25rem;
+				//	margin: .2rem .75rem;
+			}
+
+			&:nth-of-type(3n+1) {
+				left: 0;
+				//	margin: .2rem .75rem;
+			}
+
+			&:nth-of-type(3n) {
+				left: 6.5rem;
+			}
+
+			&:nth-of-type(4), &:nth-of-type(5), &:nth-of-type(6) {
+				top: 1.2rem;
+			}
+
+			&:nth-of-type(7), &:nth-of-type(8), &:nth-of-type(9) {
+				top: 2.4rem;
+			}
+
+			&:nth-of-type(10), &:nth-of-type(11), &:nth-of-type(12) {
+				top: 3.6rem;
+			}
+
+			&:nth-of-type(13), &:nth-of-type(14), &:nth-of-type(15) {
+				top: 4.8rem;
+			}
+
+			&:nth-of-type(16), &:nth-of-type(17), &:nth-of-type(18) {
+				top: 6rem;
+			}
+
+			&:nth-of-type(19), &:nth-of-type(20), &:nth-of-type(21) {
+				top: 7.2rem;
+				//left: 0;
+			}
+
+			&:nth-of-type(20) {
+				//left: 3.25rem;
+			}
+
+			&:after {
+				content: '';
+				clear: both;
+			}
+
+		}
+
+	}
+
+	.zmiti-line {
+		clear: both;
+		@include fly-h-gradient-line;
+		width: 9rem;
+		margin: 1.6rem auto .6rem;
+		height: 1px;
+	}
+
+	.zmiti-choose-btn {
+		width: 4rem;
+		@include pos(a);
+		bottom: 1rem;
+		left: 3rem;
+	}
+
+}

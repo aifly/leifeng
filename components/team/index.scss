@@ -1,0 +1,68 @@
+@import "../css/base.scss";
+
+.zmiti-team-main-ui {
+	z-index: -1;
+	opacity: 0;
+	@include transition(1s opacity);
+
+	&.show {
+		z-index: 110;
+		opacity: 1;
+	}
+
+	.zmiti-team-content {
+		color: #fff;
+		@include pos(a);
+		width: 7rem;
+		left: 1.5rem;
+		top: 5rem;
+
+		div {
+			height: 1rem;
+			font-size: .45rem;
+
+			span {
+				margin: 0 10px;
+
+				&:nth-of-type(1) {
+					margin: 0;
+				}
+
+			}
+
+		}
+
+		h1 {
+			font-size: .5rem;
+			height: 1.5rem;
+			text-align: center;
+			@include pos(r);
+
+			&:before {
+				content: '';
+				@include pos(a);
+				width: 100%;
+				height: 2px;
+				left: 0;
+				bottom: .5rem;
+				background: -webkit-gradient(linear, left top, right top, from(rgba(225, 225, 255, .2)), color-stop(0.5, rgba(225, 225, 255, 1)), to(rgba(225, 225, 255, .2)));
+			}
+
+		}
+
+	}
+
+	.zmiti-back {
+		color: #158ae4;
+		background: #fff;
+		width: 2.4rem;
+		height: 1rem;
+		@include br(4px);
+		text-align: center;
+		line-height: 1rem;
+		@include pos(a);
+		bottom: 2.5rem;
+		left: 3.6rem;
+	}
+
+}

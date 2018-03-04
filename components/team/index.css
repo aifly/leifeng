@@ -1,0 +1,82 @@
+/*.ant-btn:focus, .ant-btn:hover,.ant-input:focus, .ant-input:hover {
+    background-color: #fff;
+    border-color: #bf1616;
+    box-shadow: 0 0 0 2px rgba(191, 22, 22, 0.1);
+}*/
+.lt-full {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.zmiti-text-overflow {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  -webkit-text-overflow: ellipsis; }
+
+.zmiti-play {
+  width: .8rem;
+  height: .8rem;
+  border-radius: 50%;
+  position: fixed;
+  z-index: 1000;
+  right: .5rem;
+  top: .5rem; }
+  .zmiti-play.rotate {
+    -webkit-animation: rotate 5s linear infinite;
+    animation: rotate 5s linear infinite; }
+
+@-webkit-keyframes rotate {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+.zmiti-team-main-ui {
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: 1s opacity;
+  transition: 1s opacity; }
+  .zmiti-team-main-ui.show {
+    z-index: 110;
+    opacity: 1; }
+  .zmiti-team-main-ui .zmiti-team-content {
+    color: #fff;
+    position: absolute;
+    width: 7rem;
+    left: 1.5rem;
+    top: 5rem; }
+    .zmiti-team-main-ui .zmiti-team-content div {
+      height: 1rem;
+      font-size: .45rem; }
+      .zmiti-team-main-ui .zmiti-team-content div span {
+        margin: 0 10px; }
+        .zmiti-team-main-ui .zmiti-team-content div span:nth-of-type(1) {
+          margin: 0; }
+    .zmiti-team-main-ui .zmiti-team-content h1 {
+      font-size: .5rem;
+      height: 1.5rem;
+      text-align: center;
+      position: relative; }
+      .zmiti-team-main-ui .zmiti-team-content h1:before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        bottom: .5rem;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(225, 225, 255, 0.2)), color-stop(0.5, #e1e1ff), to(rgba(225, 225, 255, 0.2))); }
+  .zmiti-team-main-ui .zmiti-back {
+    color: #158ae4;
+    background: #fff;
+    width: 2.4rem;
+    height: 1rem;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 1rem;
+    position: absolute;
+    bottom: 2.5rem;
+    left: 3.6rem; }
+
+/*# sourceMappingURL=index.css.map */
