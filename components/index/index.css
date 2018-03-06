@@ -93,39 +93,47 @@ img {
     width: 9rem;
     left: .5rem;
     bottom: 0;
-    height: 4.5rem;
     color: #a93832;
-    text-align: center; }
+    text-align: center;
+    height: 32vh;
+    height: 4.5rem; }
     .zmiti-index-main-ui .zmiti-indx-bottom .zmiti-logo-C {
-      -webkit-transform: scale(0.95);
-      transform: scale(0.95);
-      width: 8.5rem;
-      margin: 0 auto;
-      display: -webkit-box;
-      -webkit-box-align: center;
-      -webkit-box-pack: center;
-      -webkit-box-orient: horizontal;
-      -webkit-box-pack: justify; }
-      .zmiti-index-main-ui .zmiti-indx-bottom .zmiti-logo-C .zmiti-qrcode img {
-        width: 2.4rem; }
+      text-align: center;
+      position: absolute;
+      margin-left: -.7rem;
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9);
+      bottom: .6rem;
+      width: 100%; }
+    .zmiti-index-main-ui .zmiti-indx-bottom .zmiti-qrcode {
+      width: 2.2rem;
+      position: absolute;
+      right: .2rem;
+      bottom: .2rem; }
     .zmiti-index-main-ui .zmiti-indx-bottom h1 {
       margin: .2rem 0;
       font-size: .5rem;
       font-weight: normal; }
+      .zmiti-index-main-ui .zmiti-indx-bottom h1:nth-of-type(2) {
+        text-indent: .2rem; }
       .zmiti-index-main-ui .zmiti-indx-bottom h1 span {
         position: relative;
-        width: 1.3rem;
+        width: 1.7rem;
         height: .5rem;
         border-bottom: 1px solid #a93832;
         display: inline-block;
         top: .1rem;
-        padding-bottom: .1rem; }
+        padding-bottom: .2rem; }
+        .zmiti-index-main-ui .zmiti-indx-bottom h1 span label {
+          font-size: .8rem;
+          margin-top: -.2rem;
+          margin-left: -.12rem; }
         .zmiti-index-main-ui .zmiti-indx-bottom h1 span .zmiti-hand {
           position: absolute;
           width: 1rem;
           left: .3rem;
-          top: 0; }
-          .zmiti-index-main-ui .zmiti-indx-bottom h1 span .zmiti-hand span {
+          top: .2rem; }
+          .zmiti-index-main-ui .zmiti-indx-bottom h1 span .zmiti-hand b {
             position: absolute;
             width: 1rem;
             height: 1rem;
@@ -133,20 +141,20 @@ img {
             opacity: .5;
             background: rgba(238, 101, 19, 0.5);
             background: #f90;
-            left: 0;
+            left: .2rem;
             top: 0;
-            -webkit-transform: translate3d(-26%, -45%, 0);
-            transform: translate3d(-26%, -45%, 0);
+            -webkit-transform: translate3d(-10%, -45%, 0);
+            transform: translate3d(-10%, -45%, 0);
             -webkit-animation: scale 1s infinite;
             animation: scale 1s infinite; }
 @-webkit-keyframes scale {
   from {
-    -webkit-transform: translate3d(-26%, -45%, 0) scale(0);
-    transform: translate3d(-26%, -45%, 0) scale(0);
+    -webkit-transform: translate3d(-20%, -45%, 0) scale(0);
+    transform: translate3d(-20%, -45%, 0) scale(0);
     opacity: 1; }
   to {
-    -webkit-transform: translate3d(-26%, -45%, 0) scale(1.4);
-    transform: translate3d(-26%, -45%, 0) scale(1.4);
+    -webkit-transform: translate3d(-20%, -45%, 0) scale(1.4);
+    transform: translate3d(-20%, -45%, 0) scale(1.4);
     opacity: 0; } }
       .zmiti-index-main-ui .zmiti-indx-bottom h1 label {
         position: absolute;
@@ -156,10 +164,9 @@ img {
         height: 100%;
         text-align: center; }
     .zmiti-index-main-ui .zmiti-indx-bottom .zmiti-logo {
-      width: 6rem;
+      margin: 0 auto;
       color: #000;
-      font-size: .38rem;
-      text-align: right; }
+      font-size: .38rem; }
       .zmiti-index-main-ui .zmiti-indx-bottom .zmiti-logo img {
         width: 1rem; }
     .zmiti-index-main-ui .zmiti-indx-bottom select {
@@ -178,6 +185,12 @@ img {
     left: 0rem;
     top: 0rem;
     z-index: -1; }
+    .zmiti-index-main-ui .zmiti-cache-page.debug {
+      left: -5rem;
+      top: -8rem;
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      z-index: 10; }
     .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom {
       position: absolute;
       width: 18rem;
@@ -185,39 +198,42 @@ img {
       bottom: 0;
       height: 8.4rem;
       color: #a93832;
+      height: 10rem;
       text-align: center; }
       .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom .zmiti-logo-C {
-        -webkit-transform: scale(0.95);
-        transform: scale(0.95);
-        width: 17rem;
-        margin: 0 auto;
-        display: -webkit-box;
-        -webkit-box-align: center;
-        -webkit-box-pack: center;
-        -webkit-box-orient: horizontal;
-        -webkit-box-pack: justify;
-        position: relative;
-        top: -.3rem; }
-        .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom .zmiti-logo-C .zmiti-qrcode img {
-          width: 4.8rem; }
+        position: absolute;
+        margin-left: -1.4rem;
+        bottom: 1.2rem;
+        width: 100%;
+        text-align: center; }
+      .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom .zmiti-qrcode {
+        right: 0.4rem;
+        bottom: 0.4rem;
+        width: 4.4rem; }
       .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom h1 {
-        margin: 0.32rem 0;
+        margin: 0.4rem 0;
         font-size: 1rem;
         font-weight: normal; }
+        .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom h1:nth-of-type(2) {
+          text-indent: 0.4rem; }
         .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom h1 span {
           position: relative;
-          width: 2.6rem;
+          width: 3.4rem;
           height: 1rem;
           border-bottom: 2px solid #a93832;
           display: inline-block;
-          top: 0.2rem; }
+          top: 0.2rem;
+          padding-bottom: 0.4rem; }
         .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom h1 label {
           position: absolute;
           left: 0;
           top: 0;
           width: 100%;
           height: 100%;
-          text-align: center; }
+          text-align: center;
+          font-size: 1.6rem;
+          margin-top: -0.4rem;
+          margin-left: -0.24rem; }
         .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom h1 select {
           position: absolute;
           width: 100%;
@@ -227,17 +243,16 @@ img {
           z-index: 10;
           opacity: 0; }
       .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom .zmiti-logo {
-        width: 12rem;
         color: #000;
         font-size: 0.76rem;
-        margin-top: -.1rem; }
+        margin: -.1rem auto; }
         .zmiti-index-main-ui .zmiti-cache-page .zmiti-indx-bottom .zmiti-logo img {
           width: 2rem; }
   .zmiti-index-main-ui .zmiti-share-btns {
     position: absolute;
     width: 7rem;
     left: 1.5rem;
-    bottom: 1.5rem;
+    bottom: 1rem;
     z-index: 10;
     display: -webkit-box;
     -webkit-box-align: center;

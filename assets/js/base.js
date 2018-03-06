@@ -1,9 +1,9 @@
 var imgs = {
 	play: './assets/images/play.png',
 	logo: './assets/images/logo.png',
-	bg: './assets/images/bg.jpg',
+	bg: './assets/images/bg1.jpg',
 	arrow: './assets/images/arrow.png',
-	qrcode: './assets/images/qrcode.png',
+	qrcode: './assets/images/qrcode1.png',
 	hand: './assets/images/hand.png',
 
 }

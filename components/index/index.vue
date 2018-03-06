@@ -9,51 +9,53 @@
 			</div>
 		  </transition>
 		<div v-if='!createImg' :style="{background:'url('+imgs.bg+') no-repeat center top',backgroundSize:'cover'}" class="lt-full">
-			<div class="zmiti-indx-bottom">
+			<div class="zmiti-indx-bottom" :style="{height: viewH*.3+'px'}">
 				<div class="zmiti-text">
-					<select v-model='num'>
-						<option  v-for='ct in count' :value="ct.value" v-html='ct.label'></option>
+					<select @change='change' v-model='num' v-tap='numstart'>
+						<option></option>
+						<option v-for='(ct,i) in count' :value="ct.value" v-html='ct.label'></option>
 					</select>
 					<h1>做新时代的雷锋</h1>
 					<h1>今年我要做<span>
 					<label>{{num}}</label>
 					<div class="zmiti-hand" v-if='showHand'>
-						<span></span>
-						<span></span>
+						<b></b>
+						<b></b>
 						<img :src="imgs.hand" alt="">
 					</div>
-
 				</span>件好事，立此为证。</h1>
 					<div class="zmiti-logo-C">
-						<div class="zmiti-qrcode">
-							<img :src="imgs.qrcode" alt="">
-						</div>
+						
 						<div class="zmiti-logo">
 							<img :src="imgs.logo" alt="">
 							<span>新华社新媒体中心出品</span>
 						</div>
 					</div>
+					<div class="zmiti-qrcode">
+							<img :src="imgs.qrcode" alt="">
+						</div> 
 				</div>
 			</div>
 		</div>
 
 
 		<div v-if='!createImg' ref='zmiti-cache-page' :style="{background:'url('+imgs.bg+') no-repeat center top',backgroundSize:'cover',height:viewH*2+'px'}" class="zmiti-cache-page ">
-			<div class="zmiti-indx-bottom">
+			<div class="zmiti-indx-bottom" :style="{height: viewH*.3*2+'px'}">
 				<div class="zmiti-text">
 					<h1>做新时代的雷锋</h1>
 					<h1>今年我要做<span>
 					<label>{{num}}</label>
 				</span>件好事，立此为证。</h1>
 					<div class="zmiti-logo-C">
-						<div class="zmiti-qrcode">
-							<img :src="imgs.qrcode" alt="">
-						</div>
+						
 						<div class="zmiti-logo">
 							<img :src="imgs.logo" alt="">
 							<span>新华社新媒体中心出品</span>
 						</div>
 					</div>
+					<div class="zmiti-qrcode">
+							<img :src="imgs.qrcode" alt="">
+						</div> 
 				</div>
 			</div>
 		</div>
@@ -107,6 +109,12 @@
 			}
 		},
 		methods:{
+			change(){
+
+			},
+			numstart(){
+				//this.num =  1;
+			},
 			hideMask(){
 				this.showMasks = false;
 			},
@@ -173,15 +181,15 @@
 				this.showTitle = true;
 			});
 
-			for(var i=1;i<101;i++){
+			for(var i=1;i<100;i++){
 				this.count.push({
 					value:i,
 					label:i
 				})
 			};
 			this.count.push({
-				value:'100+',
-				label:'100+'
+				value:'99+',
+				label:'99+'
 			});
 
 
